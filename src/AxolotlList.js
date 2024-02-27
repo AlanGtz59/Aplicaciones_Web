@@ -6,8 +6,10 @@ const AxolotlList = () => {
   const [axolotls, setAxolotls] = useState([]);
 
   useEffect(() => {
-    axios.get('https://theaxolotlapi.netlify.app/api/random')
+    axios.get('https://api.thecatapi.com/v1/images/search?limit=10')
       .then(response => {
+        axios.style.width = "200px";
+        axios.style.height = "200px";
         setAxolotls(response.data);
       })
       .catch(error => {
@@ -17,7 +19,7 @@ const AxolotlList = () => {
 
   return (
     <div>
-      <h1>Adorable Axolotls</h1>
+      <h1>Adorable Cats</h1>
       <ul>
         {axolotls.map(axolotl => (
           <li key={axolotl.id}>

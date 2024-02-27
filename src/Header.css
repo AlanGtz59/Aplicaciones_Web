@@ -1,0 +1,55 @@
+/* components/Header.css */
+body {
+    background-image: url(ciudad.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.dropdown-menu {
+    background: #1e1e1e;
+}
+
+.bars {
+    display: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+li a {
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+ul li a:hover {
+    background: #ff5722;
+}
+
+/* Estilos para tablet (ajústalos según tus necesidades) */
+@media (max-width: 850px) {
+    .bars {
+        background-color: #1e1e1e;
+        display: block;
+    }
+    .dropdown-menu {
+        /* Ajusta el ancho y la altura según tus preferencias */
+    }
+}
