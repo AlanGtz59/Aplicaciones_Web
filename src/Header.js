@@ -18,10 +18,7 @@ function Header() {
                 </div>
                 <nav id="menu" className="dropdown-menu">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Galería</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                        <li><a href="#">Contáctanos</a></li>
+                        <li><h2 color='blanco' >Adorable Cats</h2></li>
                     </ul>
                 </nav>
             </header>

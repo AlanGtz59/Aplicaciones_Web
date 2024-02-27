@@ -8,8 +8,6 @@ const AxolotlList = () => {
   useEffect(() => {
     axios.get('https://api.thecatapi.com/v1/images/search?limit=10')
       .then(response => {
-        axios.style.width = "200px";
-        axios.style.height = "200px";
         setAxolotls(response.data);
       })
       .catch(error => {
@@ -19,11 +17,10 @@ const AxolotlList = () => {
 
   return (
     <div>
-      <h1>Adorable Cats</h1>
       <ul>
         {axolotls.map(axolotl => (
           <li key={axolotl.id}>
-            <img src={axolotl.url} alt="Axolotl" />
+            <img src={axolotl.url} alt="Axolotl" className='w-150'/>
             <p>{axolotl.fact}</p>
           </li>
         ))}
