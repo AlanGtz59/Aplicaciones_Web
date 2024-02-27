@@ -20,7 +20,7 @@ const AxolotlList = () => {
       <ul>
         {axolotls.map(axolotl => (
           <li key={axolotl.id}>
-            <img src={axolotl.url} alt="Axolotl" className='w-150'/>
+            <img style={{flex:1}}src={axolotl.url} alt="Axolotl" flex  />
             <p>{axolotl.fact}</p>
           </li>
         ))}
