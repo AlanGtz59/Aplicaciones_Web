@@ -6,7 +6,7 @@ const AxolotlList = () => {
   const [axolotls, setAxolotls] = useState([]);
 
   useEffect(() => {
-    axios.get('https://api.thecatapi.com/v1/images/search?limit=10')
+    axios.get('https://api.thecatapi.com/v1/images/search?limit=100')
       .then(response => {
         setAxolotls(response.data);
       })
@@ -16,11 +16,16 @@ const AxolotlList = () => {
   }, []);
 
   return (
-    <div>
+    <div content='wrap'>
       <ul>
         {axolotls.map(axolotl => (
           <li key={axolotl.id}>
-            <img style={{flex:1}}src={axolotl.url} alt="Axolotl" flex  />
+            <img style={{
+              marginTop: 1,
+              margin: 20,
+              backgroundColor: 'skyblue'
+              }}
+              src={axolotl.url} alt="Axolotl" flex  />
             <p>{axolotl.fact}</p>
           </li>
         ))}
