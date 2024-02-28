@@ -7,7 +7,7 @@ import Header from './header.js';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" content=''>
       <Header/>
       <AxolotlList/>
     </div>
