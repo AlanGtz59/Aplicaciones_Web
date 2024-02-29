@@ -1,6 +1,7 @@
 // components/Header.js
 import React from 'react';
 import './Header.css';
+import RedirectToCatAPIButton from './linkapi.js';
 
 function Header() {
     const toggleMenu = () => {
@@ -18,7 +19,10 @@ function Header() {
                 </div>
                 <nav id="menu" className="dropdown-menu">
                     <ul>
-                        <li><h2 color='blanco' >Adorable Cats</h2></li>
+                        <li><h2 color='blanco' >Adorable Cats</h2>
+                        <RedirectToCatAPIButton/>
+                        </li>
+
                     </ul>
                 </nav>
             </header>

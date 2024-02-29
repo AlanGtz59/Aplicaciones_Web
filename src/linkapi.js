@@ -8,9 +8,11 @@ const RedirectToCatAPIButton = () => {
   };
 
   return (
-    <button onClick={redirectToCatAPI}>
-      Ir a The Cat API
-    </button>
+    <div className="button-container">
+      <button onClick={redirectToCatAPI}>
+        Ir a The Cat API
+      </button>
+    </div>
   );
 };
 
