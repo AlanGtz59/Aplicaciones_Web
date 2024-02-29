@@ -1,9 +1,12 @@
 /* components/Header.css */
 body {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+    background-color: #282c34;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .dropdown-menu {
@@ -25,6 +28,15 @@ li {
     list-style: none;
 }
 h2{
+    color: white;
+}
+h1{
+    background-color: #282c34;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
     color: white;
 }
 
@@ -51,4 +63,17 @@ ul li a:hover {
         background-color: #1e1e1e;
         display: block;
     }
+}
+#content {
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }

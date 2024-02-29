@@ -3,15 +3,17 @@ import './App.css';
 import React from 'react';
 import AxolotlList from './AxolotlList.js';
 import Header from './header.js';
+import Footer from './footer.js';
 
 
 function App() {
   return (
     <div className="App">
-      <div class="row area-contenido">
-        <div class="col-md-8 col-xs-2 col-lg-8 col-sm-8">
+      <div id='content'>
+        <div>
           <Header/>
           <AxolotlList/>
+          <Footer/>
         </div>
       </div>
     </div>

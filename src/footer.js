@@ -1,8 +1,7 @@
-// components/Header.js
 import React from 'react';
 import './Header.css';
 
-function Header() {
+function Footer() {
     const toggleMenu = () => {
         const menu = document.getElementById('menu');
         const closeButton = document.getElementById('close-button');
@@ -16,13 +15,13 @@ function Header() {
                 <div className="bars">
                     <button onClick={toggleMenu} className="menu-button" id="close-button"></button>
                 </div>
-                <nav id="menu" className="dropdown-menu">
+                <nav id="footer">
                     <ul>
-                        <li><h2 color='blanco' >Adorable Cats</h2></li>
+                        <li><a color='blanco' >SAMG</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
     );
 }
-export default Header;
+export default Footer;
