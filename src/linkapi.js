@@ -1,4 +1,3 @@
-// En tu componente React
 import React from 'react';
 import './App.css';
 

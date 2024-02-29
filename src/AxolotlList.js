@@ -1,9 +1,9 @@
 // src/components/AxolotlList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.js'; // Asegúrate de tener este archivo CSS
+import './App.js'; 
 
-const AxolotlList = ({ limit = 100 }) => {
+const AxolotlList = ({ limit = 10 }) => {
   const [axolotls, setAxolotls] = useState([]);
 
   useEffect(() => {

@@ -21,7 +21,6 @@
   max-width: 100%; /* Ajusta este valor según sea necesario */
   margin: 0 auto;   /* Centra el contenedor en la página */
 }
-/* En tu archivo de estilos (puede ser App.css o el nombre que prefieras) */
 .button-container {
   display: flex;
   justify-content: flex-end; /* Alinea el contenido al final (derecha) */
