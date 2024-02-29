@@ -48,9 +48,9 @@ nav a {
 }
 
 li a {
-    padding: 10px;
-    display: block;
-    text-align: left;
+    text-align: right; /* Alinea el contenido a la derecha */
+  margin-top: 20px;  /* Ajusta el margen superior según sea necesario */
+  padding-right: 20px; /* Añade un espacio a la derecha para mejorar el diseño */
 }
 
 ul li a:hover {
