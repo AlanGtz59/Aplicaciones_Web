@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <div id='content'>
         <div>
-          <Header/>
-          <AxolotlList limit={50} />
-          <Footer/>
+          <Header/> {/* Renderiza el componente Header */}
+          <AxolotlList limit={50} /> {/*  Renderiza el componente AxolotlList con un limite de 10*/}
+          <Footer/> {/*  Renderiza el componente Footer*/}
         </div>
       </div>
     </div>

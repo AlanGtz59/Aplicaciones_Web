@@ -2,26 +2,17 @@ import React from 'react';
 import './Header.css';
 
 function Footer() {
-    const toggleMenu = () => {
-        const menu = document.getElementById('menu');
-        const closeButton = document.getElementById('close-button');
-        menu.classList.toggle('open-menu');
-        closeButton.classList.toggle('show-close');
-    };
-
+    // Función para alternar la visibilidad del menú
     return (
         <div>
-            <header>
-                <div className="bars">
-                    <button onClick={toggleMenu} className="menu-button" id="close-button"></button>
-                </div>
+            <footer>
                 <nav id="footer">
-                    <ul>
-                        <li><a color='blanco' >SAMG</a></li>
-                    </ul>
+                        {/* Enlace de texto en el menú */}
+                        <li style={{ color: 'white' }}>SAMG TID41M</li>
                 </nav>
-            </header>
+            </footer>
         </div>
     );
 }
+
 export default Footer;

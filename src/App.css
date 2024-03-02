@@ -19,16 +19,18 @@
 /* src/components/AxolotlList.css */
 .axolotl-list-container {
   max-width: 100%; /* Ajusta este valor según sea necesario */
-  margin: 0 auto;   /* Centra el contenedor en la página */
+  margin:  wrap;   /* Centra el contenedor en la página */
 }
 .button-container {
   display: flex;
-  justify-content: flex-end; /* Alinea el contenido al final (derecha) */
+  justify-content: flex; /* Alinea el contenido al final (derecha) */
   margin-top: 20px;          /* Ajusta el margen superior según sea necesario */
+  margin-inline-start: 1%;          /* Ajusta el margen superior según sea necesario */
+  margin-bottom: 1%;          /* Ajusta el margen superior según sea necesario */
   padding-right: 20px;       /* Añade un espacio a la derecha para mejorar el diseño */
 }
 .button-container button {
-  background-color: #4CAF50; /* Color de fondo */
+  background-color: #2380d6; /* Color de fondo */
   color: white;             /* Color del texto */
   padding: 10px 20px;        /* Espaciado interno */
   font-size: 16px;          /* Tamaño del texto */
@@ -39,7 +41,7 @@
 }
 
 .button-container button:hover {
-  background-color: #45a049; /* Cambio de color al pasar el mouse */
+  background-color: #37bdba; /* Cambio de color al pasar el mouse */
 }
 
 
@@ -52,9 +54,12 @@
 }
 
 .axolotl-img {
-  width: 53%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+  border-radius: 5px; 
+  border:#6e7275;
+  width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
   height: auto; /* Mantiene la proporción original de la imagen */
-  margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+  margin-bottom: 5% ; /* Ajusta el margen inferior según sea necesario */
+  margin-top: 2% ; /* Ajusta el margen inferior según sea necesario */
 }
 
 
